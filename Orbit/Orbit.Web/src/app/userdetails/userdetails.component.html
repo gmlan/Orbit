@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="col-md-12">
+      <form *ngIf="user">
+          <h2>Edit User Details</h2>
+          <br/>
+          <app-input [field]="'ID'" [readOnly]="true" [(model)]="user.Id"></app-input>
+          <app-input [field]="'FirstName'" [(model)]="user.FirstName"></app-input>
+          <app-input [field]="'LastName'" [(model)]="user.LastName"></app-input>
+          <app-input [field]="'Email'" [(model)]="user.Email"></app-input>
+          <app-input [field]="'PasswordHash'" [(model)]="user.PasswordHash"></app-input>
+          <app-input [field]="'Phone'" [(model)]="user.Phone"></app-input>
+          <app-input [field]="'AddressLine1'" [(model)]="user.Address.AddressLine1"></app-input>
+          <app-input [field]="'AddressLine2'" [(model)]="user.Address.AddressLine2"></app-input>
+          <app-input [field]="'AddressLine3'" [(model)]="user.Address.AddressLine3"></app-input>
+          <app-input [field]="'City'" [(model)]="user.Address.City"></app-input>
+          <app-input [field]="'State'" [(model)]="user.Address.State"></app-input>
+          <app-input [field]="'Country'" [(model)]="user.Address.Country"></app-input>
+          <app-input [field]="'PostalCode'" [(model)]="user.Address.PostalCode"></app-input>
+            
+          <div>
+            <button type="button" class="btn btn-primary"  (click)="updateUser(user)">Submit</button>
+            <button type="button" class="btn btn-warning"  (click)="gotoBack()">Back</button>
+          </div>
+      </form> 
+    </div>
+ </div>

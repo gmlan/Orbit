@@ -1,0 +1,46 @@
+<div class="container1">
+    <div class="col-md-12">
+      <h1>User List</h1>
+        <div style="text-align:right">
+          <a class="btn btn-success"  [routerLink]="['/user', 0]">
+              <span class="glyphicon glyphicon-add">Add</span> 
+          </a>
+        </div>
+      </div>
+    <br/>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th class="text-center">ID</th>
+            <th class="text-center">FirstName</th>
+            <th class="text-center">LastName</th>
+            <th class="text-center">Email</th>
+            <th class="text-center">Phone</th>          
+            <th class="text-center">Address</th>          
+            <th class="text-center">Issue Count</th>          
+            <th class="text-center">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let User of Users">
+            <td>{{ User.Id }}</td>
+            <td>{{ User.FirstName }}</td>
+            <td>{{ User.LastName }}</td>
+            <td>{{ User.Email }}</td>
+            <td>{{ User.Phone }}</td>
+            <td>{{ User.Address.AddressLine1 }}{{ User.Address.AddressLine2 }}{{ User.Address.AddressLine3 }}{{ User.Address.City }}, {{ User.Address.State }} {{ User.Address.PostalCode }}</td>
+            <td>{{ User.Issues.length }} </td>
+            <td>
+              <a class="btn btn-info"  [routerLink]="['/user', User.Id]">
+                            <span class="glyphicon glyphicon-edit">Edit</span>
+            </a>
+              <button *ngIf="User.Issues.length==0"  class="btn btn-danger"
+                          (click)="removeUser(User)">
+                          <span class="glyphicon glyphicon-remove">Delete</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+     

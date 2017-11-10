@@ -1,0 +1,4 @@
+<div class="form-group">
+    <label for="{{field}}">{{field}}:</label>
+    <input type="text" name="{{field}}" [readonly]="readOnly"  class="form-control"  [ngModel]="model"  (ngModelChange)="change($event)" />    
+ </div>

@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="col-md-12">
+      <form *ngIf="issue">
+          <h2>Edit Issue Details</h2>
+          <br/>
+
+          <app-input [field]="'ID'" [readOnly]="true" [(model)]="issue.Id"></app-input>
+          <app-input [field]="'Title'" [(model)]="issue.Title"></app-input>
+          <app-input [field]="'Description'" [(model)]="issue.Description"></app-input>
+        
+          <div class="form-group">
+              <label for="Severity">Severity: </label>
+              <select class="form-control" name="Severity" [(ngModel)]="issue.Severity">                  
+                  <option *ngFor="let severity of severities" [value]="severity.Key"  [attr.selected]="issue.Severity==severity.Key ? true : null">{{severity.Value}}</option>
+               </select>
+          </div>
+
+          <div class="form-group">
+              <label for="Status">Status: </label>
+              <select class="form-control" name="Status"  [(ngModel)]="issue.Status">            
+                  <option *ngFor="let status of ticketStatus" [value]="status.Key"  [attr.selected]="issue.Status==status.Key ? true : null">{{status.Value}}</option>
+               </select>
+          </div>
+
+          <div class="form-group">
+              <label for="CreatedById">CreatedBy: </label>
+              <select class="form-control" name="CreatedById" [(ngModel)]='issue.CreatedById'>
+                  <option></option>
+                  <option *ngFor="let user of users" [value]="user.Id"  [attr.selected]="issue.CreatedById==user.Id ? true : null">{{user.LastName}},{{user.FirstName}}</option>
+               </select>
+          </div>
+
+          <div class="form-group">
+              <label for="AssigneeId">Assignee: </label>
+              <select class="form-control" name="AssigneeId" [(ngModel)]='issue.AssigneeId'>
+                  <option></option>
+                  <option *ngFor="let user of users" [value]="user.Id"  [attr.selected]="issue.AssigneeId==user.Id ? true : null">{{user.LastName}},{{user.FirstName}}</option>
+               </select>
+          </div>
+
+          <!-- <div class="form-group">
+              <label for="CreateDateTimeUtc">Create DateTime(Utc): </label>             
+              <div class="datepicker-container">
+                  <ng-datepicker name="CreateDateTimeUtc"  [(ngModel)]="issue.CreateDateTimeUtc"></ng-datepicker>
+               </div>
+          </div> -->
+
+          <div class="form-group">
+              <label for="DueDateUtc">Due Date(Utc): </label>
+              <div class="datepicker-container">
+                  <ng-datepicker name="DueDateUtc"  [(ngModel)]="issue.DueDateUtc"></ng-datepicker>
+               </div>
+          </div>
+
+          <div>
+            <button  type="button" class="btn btn-primary"  (click)="updateIssue(issue)">Submit</button>
+            <button  type="button" class="btn btn-warning"  (click)="gotoBack()">Back</button>
+          </div>
+      </form> 
+    </div>
+ </div>

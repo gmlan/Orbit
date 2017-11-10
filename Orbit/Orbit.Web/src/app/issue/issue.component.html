@@ -1,0 +1,45 @@
+<div class="container1">
+    <div class="col-md-12">
+      <h1>Issue List</h1>
+      <div style="text-align:right">
+      <button class="btn btn-success"  [routerLink]="['/issue', 0]">
+          <span class="glyphicon glyphicon-add">Add</span></button>
+        </div>
+    <br/>
+        <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th class="text-center">ID</th>
+          <th class="text-center">Title</th>
+          <th class="text-center">Severity</th>
+          <th class="text-center">Status</th>
+          <th class="text-center">CreatedBy</th>
+          <th class="text-center">AssignedTo</th>
+          <th class="text-center">Due DateTime(Utc)</th>
+          <th class="text-center">Create DateTime(Utc)</th>
+          <th class="text-center">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let issue of Issues">
+          <td>{{ issue.Id }}</td>
+          <td>{{ issue.Title }}</td>
+          <td>{{ issue.SeverityDesc }}</td>
+          <td>{{ issue.StatusDesc }}</td>
+          <td>{{ issue.CreatedBy.LastName }},{{ issue.CreatedBy.FirstName }}</td>
+          <td>{{ issue.Assignee ? issue.Assignee.LastName : "" }},{{issue.Assignee ? issue.Assignee.FirstName : "" }}</td>
+          <td>{{ issue.DueDateUtc }}</td>
+          <td>{{ issue.CreateDateTimeUtc }}</td>
+          <td>
+            <a class="btn btn-info" [routerLink] = "['/issue', issue.Id]">
+              <span class="glyphicon glyphicon-edit">Edit</span>
+            </a>
+            <button class="btn btn-danger"
+                         (click)="removeIssue(issue)">
+                         <span class="glyphicon glyphicon-remove">Delete</span>
+              </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+ 

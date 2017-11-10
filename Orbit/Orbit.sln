@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Qualcomm.Qswat.Model", "Com.Qualcomm.Qswat.Model\Com.Qualcomm.Qswat.Model.csproj", "{6818373F-D646-4500-8A07-3372989BB244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Qualcomm.Qswat.Data", "Com.Qualcomm.Qswat.Data\Com.Qualcomm.Qswat.Data.csproj", "{62D189F5-CE51-440A-8170-834817EB0CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Qualcomm.Qswat.Service", "Com.Qualcomm.Qswat.Service\Com.Qualcomm.Qswat.Service.csproj", "{73824D53-42F2-4CB6-8CAE-5A41B0B44218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Qualcomm.Qswat.Core", "Com.Qualcomm.Qswat.Core\Com.Qualcomm.Qswat.Core.csproj", "{CA05BE2C-D215-4480-9892-89D593F620C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Qualcomm.Qswat.Service.Test", "Com.Qualcomm.Qswat.Service.Test\Com.Qualcomm.Qswat.Service.Test.csproj", "{3D22C30C-DB52-4A7A-A8A0-B865F89D88AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orbit.Web.Api", "Orbit.Web.Api\Orbit.Web.Api.csproj", "{4E1436F9-D024-4026-9D33-8F36B75B1407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orbit.Web.Api.Tests", "Orbit.Web.Api.Tests\Orbit.Web.Api.Tests.csproj", "{9B0A937D-8CA3-4B0D-BAB5-24855F9D36FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6818373F-D646-4500-8A07-3372989BB244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6818373F-D646-4500-8A07-3372989BB244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6818373F-D646-4500-8A07-3372989BB244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6818373F-D646-4500-8A07-3372989BB244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D189F5-CE51-440A-8170-834817EB0CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D189F5-CE51-440A-8170-834817EB0CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D189F5-CE51-440A-8170-834817EB0CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D189F5-CE51-440A-8170-834817EB0CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73824D53-42F2-4CB6-8CAE-5A41B0B44218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73824D53-42F2-4CB6-8CAE-5A41B0B44218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73824D53-42F2-4CB6-8CAE-5A41B0B44218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73824D53-42F2-4CB6-8CAE-5A41B0B44218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA05BE2C-D215-4480-9892-89D593F620C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA05BE2C-D215-4480-9892-89D593F620C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA05BE2C-D215-4480-9892-89D593F620C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA05BE2C-D215-4480-9892-89D593F620C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D22C30C-DB52-4A7A-A8A0-B865F89D88AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D22C30C-DB52-4A7A-A8A0-B865F89D88AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D22C30C-DB52-4A7A-A8A0-B865F89D88AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D22C30C-DB52-4A7A-A8A0-B865F89D88AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1436F9-D024-4026-9D33-8F36B75B1407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1436F9-D024-4026-9D33-8F36B75B1407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1436F9-D024-4026-9D33-8F36B75B1407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1436F9-D024-4026-9D33-8F36B75B1407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0A937D-8CA3-4B0D-BAB5-24855F9D36FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0A937D-8CA3-4B0D-BAB5-24855F9D36FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0A937D-8CA3-4B0D-BAB5-24855F9D36FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0A937D-8CA3-4B0D-BAB5-24855F9D36FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
