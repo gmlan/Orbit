@@ -69,3 +69,9 @@ Install Steps
    ***c:\orbit\orbit\Orbit\Orbit.Web>ng serve***
 + Access the Orbit.Web from Chrome browser, default parot is 4200: (IE low version is not fully test.)
  ***http://localhost:4200***
+
+TODO List:
+---
+* Authentication
+* Log with Log4Net
+* More test cases
