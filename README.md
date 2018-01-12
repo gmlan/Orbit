@@ -58,7 +58,7 @@ Install Steps
   -  Open Orbit.sln from Visual Studio 2015
   -  Set "Orbit.Web.Api" project at the start project
   -  Run this project in Debug mode which will start the app at: http://localhost:55912/ 
-![Alt text](/Orbit/Orbit.Documents/RESTAPI.png?raw=true "REST API")
+![Alt text](/Orbit/Orbit.Documents/RESTAPI.PNG?raw=true "REST API")
 
 + Install Node.js from  https://nodejs.org/dist/v6.9.5/node-v6.9.5-x64.msi
 + Install Angular/cli:  
@@ -72,9 +72,9 @@ Install Steps
 
 
 
-![Alt text](/Orbit/Orbit.Documents/User.png?raw=true "User")
-![Alt text](/Orbit/Orbit.Documents/Issue.png?raw=true "Issue")
-![Alt text](/Orbit/Orbit.Documents/Issue_edit.png?raw=true "Issue Edit")
+![Alt text](/Orbit/Orbit.Documents/User.PNG?raw=true "User")
+![Alt text](/Orbit/Orbit.Documents/Issue.PNG?raw=true "Issue")
+![Alt text](/Orbit/Orbit.Documents/Issue_edit.PNG?raw=true "Issue Edit")
 
 
 TODO List:
